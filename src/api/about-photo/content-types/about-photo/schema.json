@@ -12,15 +12,13 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "alt": {
-      "type": "string"
-    },
     "image": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     }
   }
 }

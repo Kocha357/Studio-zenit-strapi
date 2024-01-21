@@ -374,8 +374,7 @@ export interface ApiAboutPhotoAboutPhoto extends Schema.CollectionType {
     draftAndPublish: true;
   };
   attributes: {
-    alt: Attribute.String;
-    image: Attribute.Media;
+    image: Attribute.Media & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
