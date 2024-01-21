@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "about_photos",
+  "info": {
+    "singularName": "about-photo",
+    "pluralName": "about-photos",
+    "displayName": "About-photo",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "alt": {
+      "type": "string"
+    }
+  }
+}
