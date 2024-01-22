@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "wall_collections",
+  "info": {
+    "singularName": "wall-collection",
+    "pluralName": "wall-collections",
+    "displayName": "Wall-collection"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    }
+  }
+}

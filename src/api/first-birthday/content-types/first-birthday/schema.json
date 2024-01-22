@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "first_birthdays",
+  "info": {
+    "singularName": "first-birthday",
+    "pluralName": "first-birthdays",
+    "displayName": "First-birthday"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    }
+  }
+}

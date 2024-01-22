@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "about_photos",
+  "collectionName": "weddings",
   "info": {
-    "singularName": "about-photo",
-    "pluralName": "about-photos",
-    "displayName": "About-photo",
+    "singularName": "wedding",
+    "pluralName": "weddings",
+    "displayName": "wedding",
     "description": ""
   },
   "options": {
@@ -19,10 +19,6 @@
       "allowedTypes": [
         "images"
       ]
-    },
-    "aboutText": {
-      "type": "text",
-      "required": true
     }
   }
 }

@@ -362,37 +362,6 @@ export interface AdminTransferTokenPermission extends Schema.CollectionType {
   };
 }
 
-export interface ApiAboutPhotoAboutPhoto extends Schema.CollectionType {
-  collectionName: 'about_photos';
-  info: {
-    singularName: 'about-photo';
-    pluralName: 'about-photos';
-    displayName: 'About-photo';
-    description: '';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    image: Attribute.Media & Attribute.Required;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::about-photo.about-photo',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::about-photo.about-photo',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
 export interface PluginUploadFile extends Schema.CollectionType {
   collectionName: 'files';
   info: {
@@ -799,6 +768,189 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
   };
 }
 
+export interface ApiAboutPhotoAboutPhoto extends Schema.CollectionType {
+  collectionName: 'about_photos';
+  info: {
+    singularName: 'about-photo';
+    pluralName: 'about-photos';
+    displayName: 'About-photo';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    image: Attribute.Media & Attribute.Required;
+    aboutText: Attribute.Text & Attribute.Required;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::about-photo.about-photo',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::about-photo.about-photo',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiBirthdayBirthday extends Schema.CollectionType {
+  collectionName: 'birthdays';
+  info: {
+    singularName: 'birthday';
+    pluralName: 'birthdays';
+    displayName: 'birthday';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    image: Attribute.Media & Attribute.Required;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::birthday.birthday',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::birthday.birthday',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiFirstBirthdayFirstBirthday extends Schema.CollectionType {
+  collectionName: 'first_birthdays';
+  info: {
+    singularName: 'first-birthday';
+    pluralName: 'first-birthdays';
+    displayName: 'First-birthday';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    image: Attribute.Media & Attribute.Required;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::first-birthday.first-birthday',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::first-birthday.first-birthday',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiPortraitPortrait extends Schema.CollectionType {
+  collectionName: 'portraits';
+  info: {
+    singularName: 'portrait';
+    pluralName: 'portraits';
+    displayName: 'Portrait';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    image: Attribute.Media & Attribute.Required;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::portrait.portrait',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::portrait.portrait',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiWallCollectionWallCollection extends Schema.CollectionType {
+  collectionName: 'wall_collections';
+  info: {
+    singularName: 'wall-collection';
+    pluralName: 'wall-collections';
+    displayName: 'Wall-collection';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    image: Attribute.Media & Attribute.Required;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::wall-collection.wall-collection',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::wall-collection.wall-collection',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiWeddingWedding extends Schema.CollectionType {
+  collectionName: 'weddings';
+  info: {
+    singularName: 'wedding';
+    pluralName: 'weddings';
+    displayName: 'wedding';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    image: Attribute.Media & Attribute.Required;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::wedding.wedding',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::wedding.wedding',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface ContentTypes {
@@ -809,7 +961,6 @@ declare module '@strapi/types' {
       'admin::api-token-permission': AdminApiTokenPermission;
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
-      'api::about-photo.about-photo': ApiAboutPhotoAboutPhoto;
       'plugin::upload.file': PluginUploadFile;
       'plugin::upload.folder': PluginUploadFolder;
       'plugin::content-releases.release': PluginContentReleasesRelease;
@@ -818,6 +969,12 @@ declare module '@strapi/types' {
       'plugin::users-permissions.permission': PluginUsersPermissionsPermission;
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
+      'api::about-photo.about-photo': ApiAboutPhotoAboutPhoto;
+      'api::birthday.birthday': ApiBirthdayBirthday;
+      'api::first-birthday.first-birthday': ApiFirstBirthdayFirstBirthday;
+      'api::portrait.portrait': ApiPortraitPortrait;
+      'api::wall-collection.wall-collection': ApiWallCollectionWallCollection;
+      'api::wedding.wedding': ApiWeddingWedding;
     }
   }
 }
