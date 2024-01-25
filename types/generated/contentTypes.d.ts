@@ -800,6 +800,131 @@ export interface ApiAboutPhotoAboutPhoto extends Schema.CollectionType {
   };
 }
 
+export interface ApiAlbumBirthdayAlbumBirthday extends Schema.CollectionType {
+  collectionName: 'album_birthdays';
+  info: {
+    singularName: 'album-birthday';
+    pluralName: 'album-birthdays';
+    displayName: 'Album-birthday';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    images: Attribute.Media;
+    headingText: Attribute.String;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::album-birthday.album-birthday',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::album-birthday.album-birthday',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiAlbumFirstBirthdayAlbumFirstBirthday
+  extends Schema.CollectionType {
+  collectionName: 'album_first_birthdays';
+  info: {
+    singularName: 'album-first-birthday';
+    pluralName: 'album-first-birthdays';
+    displayName: 'Album-first-birthday';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    images: Attribute.Media;
+    headingText: Attribute.String;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::album-first-birthday.album-first-birthday',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::album-first-birthday.album-first-birthday',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiAlbumPortraitAlbumPortrait extends Schema.CollectionType {
+  collectionName: 'album_portraits';
+  info: {
+    singularName: 'album-portrait';
+    pluralName: 'album-portraits';
+    displayName: 'Album-portrait';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    images: Attribute.Media;
+    headingText: Attribute.String;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::album-portrait.album-portrait',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::album-portrait.album-portrait',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiAlbumWeddingAlbumWedding extends Schema.CollectionType {
+  collectionName: 'album_weddings';
+  info: {
+    singularName: 'album-wedding';
+    pluralName: 'album-weddings';
+    displayName: 'album-wedding';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    images: Attribute.Media;
+    headingText: Attribute.String;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::album-wedding.album-wedding',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::album-wedding.album-wedding',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiBirthdayBirthday extends Schema.CollectionType {
   collectionName: 'birthdays';
   info: {
@@ -970,6 +1095,10 @@ declare module '@strapi/types' {
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
       'api::about-photo.about-photo': ApiAboutPhotoAboutPhoto;
+      'api::album-birthday.album-birthday': ApiAlbumBirthdayAlbumBirthday;
+      'api::album-first-birthday.album-first-birthday': ApiAlbumFirstBirthdayAlbumFirstBirthday;
+      'api::album-portrait.album-portrait': ApiAlbumPortraitAlbumPortrait;
+      'api::album-wedding.album-wedding': ApiAlbumWeddingAlbumWedding;
       'api::birthday.birthday': ApiBirthdayBirthday;
       'api::first-birthday.first-birthday': ApiFirstBirthdayFirstBirthday;
       'api::portrait.portrait': ApiPortraitPortrait;

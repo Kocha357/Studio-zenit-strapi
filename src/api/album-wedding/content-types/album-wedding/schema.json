@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "album_weddings",
+  "info": {
+    "singularName": "album-wedding",
+    "pluralName": "album-weddings",
+    "displayName": "album-wedding"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "images": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "headingText": {
+      "type": "string"
+    }
+  }
+}

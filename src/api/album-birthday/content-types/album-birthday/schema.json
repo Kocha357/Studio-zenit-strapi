@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "album_birthdays",
+  "info": {
+    "singularName": "album-birthday",
+    "pluralName": "album-birthdays",
+    "displayName": "Album-birthday"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "images": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "headingText": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "album_portraits",
+  "info": {
+    "singularName": "album-portrait",
+    "pluralName": "album-portraits",
+    "displayName": "Album-portrait"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "images": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "headingText": {
+      "type": "string"
+    }
+  }
+}
